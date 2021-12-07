@@ -19,7 +19,7 @@
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Filter by</label>
                     <input  type="email" class="form-control" id="exampleFormControlInput1" placeholder="what are you looking for?" 
-                    oninput="getInput()"
+                    oninput="search(this.value)"
                     >
                   </div>
                   <div class="form-group">
@@ -42,7 +42,7 @@
                         <th scope="col">Email</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table-body">
                       <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
