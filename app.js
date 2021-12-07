@@ -1,3 +1,24 @@
+// const name = new URLSearchParams(window.location.search).get("")
+// console.log("RESOURCE ID IS: ", artistId)
+
+const getInput = () => {
+    let input = document.getElementById('exampleFormControlInput1')
+ let value = input.value
+console.log(value)
+}
+
+getInput()
+
+
+
+   let filteredObject = () => {
+      userData.filter(userData => 
+      userData.name.toLowerCase().includes(value.toLowerCase()))
+
+   }
+
+
+
 
 const getData = async () => {
 
@@ -6,8 +27,10 @@ const getData = async () => {
 
        if (response.ok){
            
-        const Object = await response.json()
-        console.log(Object)
+        const userData = await response.json()
+        console.log(userData)
+        filteredObject(userData)
+       console.log(filteredObject);
        }
    }
 
